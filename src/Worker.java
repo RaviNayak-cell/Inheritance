@@ -20,7 +20,7 @@ public class Worker extends Person
         double normal = 0;
         if (hoursWorked > 40)
         {
-            overtime = (hoursWorked - 40) * (hourlyPayRate * 1.5);
+            overtime = (hoursWorked - 40) * (hourlyPayRate * 1.0);
             hoursWorked = 40;
             normal = hoursWorked * hourlyPayRate;
             return overtime + normal;
@@ -38,7 +38,7 @@ public class Worker extends Person
             System.out.println("Hours of normal Pay: 40.0");
             System.out.println("Total normal Pay: $" + 40 * hourlyPayRate);
             System.out.println("Hours of Overtime Pay: " + (hoursWorked - 40));
-            System.out.println("Total Overtime Pay: $" + (hoursWorked - 40) * (hourlyPayRate * 1.5));
+            System.out.println("Total Overtime Pay: $" + (hoursWorked - 40) * (hourlyPayRate * 1.0));
             System.out.println("Total Pay: $" + calculateWeeklyPay(hoursWorked));
         } else
         {

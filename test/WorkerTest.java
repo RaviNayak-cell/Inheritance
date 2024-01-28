@@ -47,11 +47,11 @@ class WorkerTest {
 
     @Test
     void calculateWeeklyPay() {
-        assertEquals(1050.00, w1.calculateWeeklyPay(42), 0.05);
+        assertEquals(1050.00, w1.calculateWeeklyPay(42), 0.01);
     }
 
     @Test
     void displayWeeklyPay() {
-        assertEquals("Weekly Pay: $1050.00", w1.displayWeeklyPay(42));
+        assertEquals(1050.00, w1.displayWeeklyPay(42));
     }
 }

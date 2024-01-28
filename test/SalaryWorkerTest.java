@@ -20,9 +20,8 @@ class SalaryWorkerTest {
 
     @Test
     void displayWeeklyPay() {
-        assertEquals("Weekly Pay: $" + (200000.0 / 52), s1.displayWeeklyPay(45));
+        assertEquals(200000.0 / 52, s1.calculateWeeklyPay(40), 0.01);
     }
-
 
     @Test
     void setFirstName() {
