@@ -14,7 +14,7 @@ public class SalaryWorker extends Worker{
     }
 
     @Override
-    public String displayWeeklyPayRate(double hoursWorked)
+    public String displayWeeklyPay(double hoursWorked)
     {
         System.out.println("Weekly Pay is a fraction of the Annual Salary: $" + String.format("%.2f", calculateWeeklyPay(hoursWorked)));
         return "";

@@ -15,6 +15,7 @@ class WorkerTest {
 
     }
 
+    @Test
     void setidNum() {
         w1.setidNum("000001");
         assertEquals("000001", w1.getidNum());
@@ -51,7 +52,6 @@ class WorkerTest {
 
     @Test
     void displayWeeklyPay() {
-        // Assuming you have a method for displaying weekly pay
         assertEquals("Weekly Pay: $1050.00", w1.displayWeeklyPay(42));
     }
 }

@@ -9,7 +9,7 @@ class PersonTest {
 
     @BeforeEach
     void setUp() {
-        p1 = new Person("000001", "ravi", "Tester1", "", 2003);
+        p1 = new Person("000001", "ravi", "Tester1", "Mr", 2003);
         p2 = new Person("000002", "tom", "Tester2", "Mr.", 2000);
         p3 = new Person("000003", "Sri", "Tester3", "Mr.", 1995);
         p4 = new Person("000004", "john", "Tester4", "", 2008);
